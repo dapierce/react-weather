@@ -16,7 +16,7 @@ var WeatherForm = React.createClass({
       <div>
         <form onSubmit={this.onFormSubmit}>
           <div className="input-group">
-            <input type="text" ref="location" className="input-group-field" placeholder="City Name"/>
+            <input type="search" ref="location" className="input-group-field" placeholder="City Name"/>
             <div className="input-group-button">
               <button className="button hollow">Search</button>
             </div>
