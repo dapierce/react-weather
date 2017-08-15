@@ -14,6 +14,7 @@ var ErrorModal = React.createClass({
   componentDidMount: function() {
     var modal = new Foundation.Reveal($('#error-modal'));
     modal.open();
+    $('#confirm').focus();
   },
   render: function() {
     var {title, message} = this.props;
@@ -25,7 +26,7 @@ var ErrorModal = React.createClass({
         <h4>{title}</h4>
         <p>{message}</p>
         <p>
-          <button className="button hollow" data-close="">
+          <button id="confirm" className="button hollow" data-close="">
             Ok
           </button>
         </p>

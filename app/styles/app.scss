@@ -1,5 +1,13 @@
 $space-large:  3rem;
 $title-color: #555;
+/* This typographic stack should work well across most platforms */
+$system-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                "Helvetica Neue", sans-serif;
+
+body, h1, h2, h3, h4, h5, h6, p {
+  font-family: $system-fonts;
+}
 
 .page-title {
   color: $title-color;
@@ -9,4 +17,9 @@ $title-color: #555;
 
 input[type=search] {
   box-shadow: none;
+}
+
+/* hacky solution to input/button height difference */
+.input-group-field {
+  height: 41px;
 }
